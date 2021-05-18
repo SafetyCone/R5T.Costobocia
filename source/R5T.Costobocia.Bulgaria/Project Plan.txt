@@ -1,0 +1,6 @@
+R5T.Costobocia.Bulgaria - Bulgaria (Dropbox directory path)-based service implementations library for organizations and organization directory path related services.
+
+* GetX() methods do not cache results.
+
+Goals
+

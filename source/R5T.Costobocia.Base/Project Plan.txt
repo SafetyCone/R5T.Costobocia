@@ -1,0 +1,8 @@
+R5T.Costobocia.Base - Base service definitions library for organizations and organization directory path related services.
+
+* Async.
+* Parameterless GetX() methods.
+* Stringly-typed paths.
+
+Goals
+

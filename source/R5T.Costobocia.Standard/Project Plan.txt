@@ -1,0 +1,5 @@
+R5T.Costobocia.Standard - Standard service aggregation library for organizations and organization directory path related services.
+
+
+Goals
+
