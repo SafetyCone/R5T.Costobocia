@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Threading.Tasks;
 
+using R5T.T0064;
+
 
 namespace R5T.Costobocia
 {
-    public interface IOrganizationsDirectoryPathProvider
+    [ServiceDefinitionMarker]
+    public interface IOrganizationsDirectoryPathProvider : IServiceDefinition
     {
         Task<string> GetOrganizationsDirectoryPath();
     }

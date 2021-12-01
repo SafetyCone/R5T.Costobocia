@@ -3,13 +3,15 @@ using System.Threading.Tasks;
 
 using R5T.Ostrogothia;
 
+using R5T.T0064;
+
 
 namespace R5T.Costobocia.Default
 {
-    public class OrganizationDirectoryNameProvider : IOrganizationDirectoryNameProvider
+    [ServiceImplementationMarker]
+    public class OrganizationDirectoryNameProvider : IOrganizationDirectoryNameProvider, IServiceImplementation
     {
         private IOrganizationProvider OrganizationProvider { get; }
-
 
 
         public OrganizationDirectoryNameProvider(

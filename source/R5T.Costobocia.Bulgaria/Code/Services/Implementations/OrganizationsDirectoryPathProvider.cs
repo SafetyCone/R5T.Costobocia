@@ -4,10 +4,13 @@ using System.Threading.Tasks;
 using R5T.Bulgaria;
 using R5T.Lombardy;
 
+using R5T.T0064;
+
 
 namespace R5T.Costobocia.Bulgaria
 {
-    public class OrganizationsDirectoryPathProvider : IOrganizationsDirectoryPathProvider
+    [ServiceImplementationMarker]
+    public class OrganizationsDirectoryPathProvider : IOrganizationsDirectoryPathProvider, IServiceImplementation
     {
         private IDropboxDirectoryPathProvider DropboxDirectoryPathProvider { get; }
         private IOrganizationsDirectoryNameProvider OrganizationsDirectoryNameProvider { get; }

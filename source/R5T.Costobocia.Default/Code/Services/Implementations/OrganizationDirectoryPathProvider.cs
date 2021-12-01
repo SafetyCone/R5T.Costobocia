@@ -3,10 +3,13 @@ using System.Threading.Tasks;
 
 using R5T.Lombardy;
 
+using R5T.T0064;
+
 
 namespace R5T.Costobocia.Default
 {
-    public class OrganizationDirectoryPathProvider : IOrganizationDirectoryPathProvider
+    [ServiceImplementationMarker]
+    public class OrganizationDirectoryPathProvider : IOrganizationDirectoryPathProvider, IServiceImplementation
     {
         private IOrganizationDirectoryNameProvider OrganizationDirectoryNameProvider { get; }
         private IOrganizationsDirectoryPathProvider OrganizationsDirectoryPathProvider { get; }
