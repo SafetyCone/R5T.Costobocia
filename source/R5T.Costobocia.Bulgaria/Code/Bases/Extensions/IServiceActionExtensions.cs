@@ -12,7 +12,7 @@ namespace R5T.Costobocia.Bulgaria
     public static class IServiceActionExtensions
     {
         /// <summary>
-        /// Adds the <see cref="OrganizationsDirectoryPathProvider"/> implementation of <see cref="IOrganizationsDirectoryPathProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="OrganizationsDirectoryPathProvider"/> implementation of <see cref="IOrganizationsDirectoryPathProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IOrganizationsDirectoryPathProvider> AddOrganizationsDirectoryPathProviderAction(this IServiceAction _,
             IServiceAction<IDropboxDirectoryPathProvider> dropboxDirectoryPathProviderAction,

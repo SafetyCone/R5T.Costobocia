@@ -12,7 +12,7 @@ namespace R5T.Costobocia.Default
     public static class IServiceActionExtensions
     {
         /// <summary>
-        /// Adds the <see cref="OrganizationDirectoryNameProvider"/> implementation of <see cref="IOrganizationDirectoryNameProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="OrganizationDirectoryNameProvider"/> implementation of <see cref="IOrganizationDirectoryNameProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IOrganizationDirectoryNameProvider> AddOrganizationDirectoryNameProviderAction(this IServiceAction _,
             IServiceAction<IOrganizationProvider> organizationProviderAction)
@@ -24,7 +24,7 @@ namespace R5T.Costobocia.Default
         }
 
         /// <summary>
-        /// Adds the <see cref="OrganizationDirectoryPathProvider"/> implementation of <see cref="IOrganizationDirectoryPathProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="OrganizationDirectoryPathProvider"/> implementation of <see cref="IOrganizationDirectoryPathProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IOrganizationDirectoryPathProvider> AddOrganizationDirectoryPathProviderAction(this IServiceAction _,
             IServiceAction<IOrganizationDirectoryNameProvider> organizationDirectoryNameProviderAction,
@@ -40,7 +40,7 @@ namespace R5T.Costobocia.Default
         }
 
         /// <summary>
-        /// Adds the <see cref="OrganizationsDirectoryNameProvider"/> implementation of <see cref="IOrganizationsDirectoryNameProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="OrganizationsDirectoryNameProvider"/> implementation of <see cref="IOrganizationsDirectoryNameProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IOrganizationsDirectoryNameProvider> AddOrganizationsDirectoryNameProviderAction(this IServiceAction _)
         {
