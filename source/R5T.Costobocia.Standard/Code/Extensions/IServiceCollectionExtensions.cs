@@ -34,9 +34,9 @@ namespace R5T.Costobocia.Standard
             var dropboxDirectoryPathProviderAction = services.AddDropboxDirectoryPathProviderAction(stringlyTypedPathOperatorAction);
 #pragma warning restore IDE0042 // Deconstruct variable declaration
 
-            var organizationsDirectoryNameProviderAction = services.AddOrganizationsDirectoryNameProviderAction();
+            var organizationsDirectoryNameProviderAction = services.AddOrganizationsDirectoryNameProviderAction_Old();
 
-            var organizationsDirectoryPathProviderAction = services.AddOrganizationsDirectoryPathProviderAction(
+            var organizationsDirectoryPathProviderAction = services.AddOrganizationsDirectoryPathProviderAction_Old(
                 dropboxDirectoryPathProviderAction._,
                 organizationsDirectoryNameProviderAction,
                 stringlyTypedPathOperatorAction);
@@ -72,10 +72,10 @@ namespace R5T.Costobocia.Standard
 #pragma warning restore IDE0042 // Deconstruct variable declaration
                 stringlyTypedPathOperatorAction);
 
-            var organizationDirectoryNameProviderAction = services.AddOrganizationDirectoryNameProviderAction(
+            var organizationDirectoryNameProviderAction = services.AddOrganizationDirectoryNameProviderAction_Old(
                 organizationProviderAction);
 
-            var organizationDirectoryPathProviderAction = services.AddOrganizationDirectoryPathProviderAction(
+            var organizationDirectoryPathProviderAction = services.AddOrganizationDirectoryPathProviderAction_Old(
                 organizationDirectoryNameProviderAction,
                 organizationsDirectoryPathProviderAction._,
                 stringlyTypedPathOperatorAction);
